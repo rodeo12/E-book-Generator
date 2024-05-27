@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BriBooks - KDP Format</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BriBooks - Create Your Book</h1>
+
+        <!-- Front Cover Design -->
+        <section id="front-cover" class="page">
+            <h2>Front Cover Design</h2>
+            <label for="front-cover-image">Upload Front Cover Image:</label>
+            <input type="file" id="front-cover-image" accept="image/*">
+            <label for="front-title">Title:</label>
+            <input type="text" id="front-title" placeholder="Enter book title">
+            <label for="front-writer">Written by:</label>
+            <input type="text" id="front-writer" placeholder="Enter writer's name">
+        </section>
+
+        <!-- Update the preview box structure in index.html -->
+<div id="preview-box">
+    <h3>Preview</h3>
+    <div id="image-preview"></div>
+    <div id="metadata-preview">
+      <p>Title: <span id="preview-title">Title Goes Here</span></p>
+      <p>Written by: <span id="preview-author">Author Name</span></p>
+    </div>
+  </div>
+  
+
+        <!-- Back Cover Design -->
+        <section id="back-cover" class="page">
+            <h2>Back Cover Design</h2>
+            <label for="back-cover-image">Upload Back Cover Image:</label>
+            <input type="file" id="back-cover-image" accept="image/*">
+            <label for="back-writer">Written by:</label>
+            <input type="text" id="back-writer" placeholder="Enter writer's name">
+            <label for="writer-photo">Upload Writer's Photo:</label>
+            <input type="file" id="writer-photo" accept="image/*">
+            <label for="writer-name">Writer's Name:</label>
+            <input type="text" id="writer-name" placeholder="Enter writer's name">
+            <label for="writer-thought">Writer's Thought:</label>
+            <textarea id="writer-thought" placeholder="Enter writer's thought"></textarea>
+            <label for="publisher-name">Published by:</label>
+            <input type="text" id="publisher-name" placeholder="Enter publisher's name">
+            <label for="publisher-intro">Publisher's Intro:</label>
+            <textarea id="publisher-intro" placeholder="Enter publisher's introduction"></textarea>
+            <label for="publisher-logo">Upload Publisher's Logo:</label>
+            <input type="file" id="publisher-logo" accept="image/*">
+            <label for="publisher-website">Publisher's Website:</label>
+            <input type="url" id="publisher-website" placeholder="Enter publisher's website">
+            <label for="publisher-qr">Upload Publisher's QR Code:</label>
+            <input type="file" id="publisher-qr" accept="image/*">
+        </section>
+
+        <!-- Page Design -->
+        <section id="page-1" class="page">
+            <h2>Page 1</h2>
+            <label for="page1-image">Upload Page 1 Image:</label>
+            <input type="file" id="page1-image" accept="image/*" required>
+
+            <label for="page1-content">Page 1 Content:</label>
+            <textarea id="page1-content" required></textarea>
+        </section>
+
+        <!-- Generate PDF and Preview Book Buttons -->
+         <!-- Navigation Buttons -->
+         <div id="actions">
+            <button id="prev-page">Previous Page</button>
+            <button id="next-page">Next Page</button>
+            <button id="preview-book">Preview Book</button>
+            <button id="generate-pdf">Generate PDF</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/cropper.js"></script> -->
+</body>
+</html>
